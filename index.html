@@ -1,176 +1,52 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personel Webpage</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
 
-<html>
-  
-    <head>
-        <title>Personal Profile for Data Scientist Fortunes Favorite</title>
-    </head>
-
-    <!--Flexbox w3schools-->
-    <style>
-        h1{
-            color: rgb(0, 192, 0);
-        }
-
-        h2{
-            color: rgb(0, 192, 0);
-        }
-
-        p{
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .nav{
-            background-color: rgb(36, 36, 36);
-            display:flex;
-            flex-flow:wrap;
-        }
-
-        .navbar, .navbar:hover{
-            margin-right: 10px;
-            color: rgb(0, 192, 0);
-            text-decoration: none;
-        }
-
-        body{
-            background-color: rgb(36, 41, 34);
-        }
-
-        .main{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: left;
-
-        }
-
-        .post{
-             background-color: rgb(5, 31, 5);
-             border-radius: 10px;
-             margin-right: 10px;
-             max-width:100%;
-             min-width: 200px;
-             margin-top: 0px;
-             margin-bottom: 10px;
-             
-        }
-
-        .posts{
-             display: flex;
-             flex-flow: column wrap;
-             max-width:100%;
-             min-width: 200px;
-             flex: 50%;
-             
-        }
-
-        .text{
-            padding: 5px;
-        }
-
-        .info{
-            max-width: 500px;
-            display:flex;
-            flex-flow: column;
-            flex: 50%;
-        }
-
-        .bio-img{
-            width:250px ;
-            border-radius: 10px;
-        }
-
-        button{
-             background-color: rgb(74, 128, 13);
-             color:darkblue
-        }
-
-        .pub{
-            color: rgba(255, 255, 255, 0.75);
-        }
-
-    </style>
-
-
-    <body>
-        <div class="container-main"> <!--Main Parent container open-->
-            
-            <div><!--Header container open-->
-                <h1>Fortunes Favorite</h1>
-                <h2>Wise words, even when spoken softely, will echo for eternity</h2>
-
-            </div><!--Header container closes-->
-
-            <div><!--Nav container Open-->
-                <hr>
-                <nav class="nav">
-                    <a class="navbar" href="">Home Page</a>
-                    <a class="navbar" href="">About Me</a>
-                    <a class="navbar" href="https://github.com/FortunesFavored">My Github</a>
-                    <a class="navbar" href="https://www.twitch.tv/fortunesfavorite">To My Twitch</a>
-                </nav>
-                <hr>
-            </div><!--Nav container Closes-->
-        
-        </div><!--Main Parent container close-->
-        <div class="main"><!--Main Body container-->
-            <div class="posts"> <!--Container for posts open-->
-                <div class="post">
-                    <div class="text">
-                        <h2>Background</h2>
-                        <p>
-                            I am a __ year old programmer with experience in the industrustries of Research of Development, Pharamceuticals, and cGMP.  I hold a bachelores degree in Physics, which was earned in 2012 from Northern Illinois University. I have published 2 articles pertaing to pharmaceutical analysis and good practices.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <div class="text">
-                        <h2>Intent</h2>
-                        <p>
-                            I want to be a data scients.  I like working with numbers.  I intend to stream all side projects that I will be working on.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="post">
-                    <div class="text">
-                        <h2>Publications</h2>
-                        <p>The list of articles that I have co-Authored:</p>
-                        <ul>
-                            <li><a class="pub" href="https://www.pharmtech.com/view/determining-water-content-with-a-novel-karl-fischer-titration-approach">Determining Water Content with a Novel Karl Fischer Titration Approach</a></li>
-                            <li><a class="pub" href="https://www.pharmtech.com/view/impact-vortexing-particle-size-distribution-pharmaceuticals">The Impact of Vortexing on the Particle-Size Distribution of Pharmaceuticals</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!--Container for posts close-->
-            
-            <div class="info">
-                <div>
-                    <div class="Biopic">
-                        <img class="bio-img" src="https://i.imgur.com/xLuHzll.jpg" alt="A picture of me at the renaissance fair" title="Join my discord at https://discord.gg/NXHbKjd7">
-                    </div>
-                    
-                    <div>
-                        <h1>Fortunes AKA Greg</h1>
-                    </div>
-
-                    <div>
-                    <form>
-                        <h3 style="color: rgb(255, 255, 255, 0.8);">Submit a question</h1>
-                        <p>
-                           Have a question about me, mathematics, physics, or any of lifes questions let me know.
-                        </p>
-                        <input type="text">
-                        <button>Ask</button>
-                    </form>  
-                    </div>
-                </div>
+<body>
+    <!-- This first div will be the header -->
+    <div class="header">
+        <div class="container">
+            <img src="Pictures\mtrushmore.jpg" alt="">
+            <div class="quote">
+                Wisewords even when spoken softely will Echo for Eternity
             </div>
-        </div><!--Main body container close-->
-    </body>
-
-
+        </div>
+    </div>
+    <!-- end header begin nav bar -->
+    <div>
+        <hr>
+        <nav class="nav">
+            <a class="navbar" href="" target="">Home Page</a>
+            <a class="navbar" href="" target="">About Me</a>
+            <a class="navbar" href="https://github.com/FortunesFavored" target="">My Github</a>
+            <a class="navbar" href="https://www.twitch.tv/fortunesfavorite" target="">To My Twitch</a>
+        </nav>
+        <hr>
+    </div>
     
+    <!--Nav container Closes-->
+<!-- start of bulk text -->
+    <div class="main">
+        <div class="left">
+                <div class="post">this is a post</div>
+        </div>
 
+
+        <div class="right">
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
 </html>
-
