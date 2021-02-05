@@ -1,5 +1,14 @@
+@font-face {
+    font-family:"Courgette-Regular";
+    src: url("../fonts/Courgette-Regular.ttf") format("truetype");
+  }
+
 body{
     background-color: rgb(31, 31, 31);
+}
+
+.header2{
+
 }
 
 .header2 > div{
