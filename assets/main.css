@@ -57,6 +57,7 @@ body{
 .brand-font{
     font-size: 24px;
     font-family: Courgette-Regular;
+    text-shadow:2px 1px rgb(44, 105, 44);
 }
 
 .navbar2:hover{
