@@ -4,11 +4,7 @@
   }
 
 body{
-    background-color: rgb(31, 31, 31);
-}
-
-.header-main{
-
+    background-color: rgb(29, 29, 29);
 }
 
 .header-main > div{
@@ -28,7 +24,7 @@ body{
     color: white;
 }
 
-.quote2{
+.header-quote{
     font-family: Courgette-Regular;
     word-wrap: normal;
     font-weight: bold;
@@ -41,17 +37,10 @@ body{
     transform: translate(0%,0%);
 }
 
-.nav2{
-    display:flex;
-    flex-flow:wrap;
-    justify-content: space-around;
-    font-size: 24px;
-}
-
 .navbar-ff{
-    background-color: rgba(0, 71, 0, 0.603);
-    border-radius: 10px;
-    font-size: 18px;
+    background-color: rgba(48, 88, 40, 0.383);
+    border-radius: 0px 0px 10px 10px;
+    font-size: 22px;
 }
 
 .brand-font{
@@ -65,12 +54,16 @@ body{
     text-decoration: none;
 }
 
-.twitch{
-    color: blueviolet;
+.twitch {
+    font-size: 22px;
+    text-shadow: -1px 1px 1px white;
+    color: rgb(143, 24, 255) !important;
 }
 
 .twitch:hover{
-    color: rgb(98, 31, 160);
+    font-size: 22px;
+    text-shadow: -2px 2px 2px rgb(126, 0, 211);
+    color: rgb(255, 255, 255) !important;
 }
 
 .main{
