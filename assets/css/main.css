@@ -1,17 +1,5 @@
-@font-face {
-    font-family:"Courgette-Regular";
-    src: url("../fonts/Courgette-Regular.ttf") format("truetype");
-  }
-
 body{
     background-color: rgb(31, 31, 31);
-}
-
-.header2{
-    /* border: 5px;
-    border-color: aqua;
-    border-style: solid; */
-    /* margin-bottom: -75px; */
 }
 
 .header2 > div{
