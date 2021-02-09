@@ -1,0 +1,30 @@
+.main-body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+
+}
+
+.main-left{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* width: 300px; */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    max-width: 600px;
+
+}
+
+.main-right{
+    background-color: pink;
+    width: 300px;
+}
+.block-info{
+    margin-bottom: 15px;
+    border: 2px solid rgb(0, 170, 8);
+    background-color: rgb(176, 255, 169);
+    border-radius: 30px;
+    padding: 20px;
+}
