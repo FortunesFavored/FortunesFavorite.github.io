@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+            background
+			body { margin: 0;}
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+		<script>
+
+//the following code generates a cube
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 500 );
+
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.body.appendChild( renderer.domElement );
+
+            const geometry = new THREE.BoxGeometry();
+            const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+            const cube = new THREE.Mesh( geometry, material );
+            scene.add( cube );
+//this is the end of the line for the cube generation
+
+//The following code is a generated line
+            // const renderer = new THREE.WebGLRenderer();
+            // renderer.setSize( window.innerWidth, window.innerHeight );
+            // document.body.appendChild( renderer.domElement );
+
+            // const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 500 );
+            // camera.position.set( 0, 0, 100 );
+            // camera.lookAt( 0, 0, 0 );
+
+            // const scene = new THREE.Scene();
+
+            // const material = new THREE.LineBasicMaterial( { color: 0x0000ff } );
+            // const points = [];
+            // points.push( new THREE.Vector3( - 10, 10, 0 ) );
+            // points.push( new THREE.Vector3( 0, 10, 0 ) );
+            // points.push( new THREE.Vector3( 10, 0, 0 ) );
+
+            // const geometry = new THREE.BufferGeometry().setFromPoints( points );
+
+            // const line = new THREE.Line( geometry, material );
+            // scene.add(line)
+            // renderer.render( scene, camera );
+
+//This is the end of the code for the lines
+
+//The following code will generate a zelda object
+            // import { GLTFLoader } from 'js/examples/jsm/loaders/GLTFLoader.js';
+
+            // const loader = new GLTFLoader();
+
+            // loader.load( 'assets/3d_models/scene.glb',
+            // function ( gltf ) {
+
+            //     scene.add( gltf.scene );
+
+            // },
+            // undefined,
+            // function ( error ) {
+
+            //     console.error( error );
+
+            // } );
+            // import { GLTFLoader } from 'js/three/examples/jsm/loaders/GLTFLoader.js';
+            // // Instantiate a loader
+            // const loader = new GLTFLoader();
+
+            // // Optional: Provide a DRACOLoader instance to decode compressed mesh data
+            // const dracoLoader = new DRACOLoader();
+            // dracoLoader.setDecoderPath( '/examples/js/libs/draco/' );
+            // loader.setDRACOLoader( dracoLoader );
+
+            // // Load a glTF resource
+            // loader.load(
+            //     // resource URL
+            //     'models/gltf/duck/duck.gltf',
+            //     // called when the resource is loaded
+            //     function ( gltf ) {
+
+            //         scene.add( gltf.scene );
+
+            //         gltf.animations; // Array<THREE.AnimationClip>
+            //         gltf.scene; // THREE.Group
+            //         gltf.scenes; // Array<THREE.Group>
+            //         gltf.cameras; // Array<THREE.Camera>
+            //         gltf.asset; // Object
+
+            //     },
+            //     // called while loading is progressing
+            //     function ( xhr ) {
+
+            //         console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+
+            //     },
+            //     // called when loading has errors
+            //     function ( error ) {
+
+            //         console.log( 'An error happened' );
+
+            //     }
+            // );
+
+
+            // const renderer = new THREE.WebGLRenderer();
+            // renderer.setSize( window.innerWidth, window.innerHeight );
+            // document.body.appendChild( renderer.domElement );
+
+            // const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 500 );
+            // camera.position.set( 0, 0, 100 );
+            // camera.lookAt( 0, 0, 0 );
+
+            // const scene = new THREE.Scene();
+//this is the end of the code for the zelda object
+
+
+            camera.position.z = 10;
+            camera.lookAt( 2, 2, 2 );
+
+            function animate(){
+                requestAnimationFrame(animate);
+                cube.rotation.x += 0.02;
+                cube.rotation.y += 0.02;
+                renderer.render(scene, camera);
+            }
+
+            animate();
+
+		</script>
+	</body>
+</html>
